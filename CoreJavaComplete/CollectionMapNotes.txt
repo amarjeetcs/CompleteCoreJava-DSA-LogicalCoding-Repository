@@ -1,0 +1,164 @@
+Top Topics for Interviews & Practical I have done in this CoreJavaComplete with Notes on this Repository:-
+--------------------------------------------------------------------------------------------------------
+->Wrapper Class
+->Type Casting
+->String
+->Exception Handling
+->Multi-Threading
+->OOP'S
+->This, Super, Final, Static, Transient, Volatile
+->Collection
+->Map
+->Jdk8
+<---Written by Amarjeet Kumar Singh--->
+
+						Collection
+				-----------------------------------------------
+				List	               Set                 Queue	
+			        ->ArrayList(c)         ->HashSet(c)        ->PriorityQueue(c)
+				->LinkedList(c)        ->LinkedHashSet(c)  ->Dequeue(I)
+				->Vector(c)            ->SortedSet(I)	         ->ArrayDequeue
+				->Stack(c)                 ->TreeSet(c)
+
+						
+
+						                  Map
+                                ---------------------------------------------------------------------- 
+				HashMap(c)     LinkedHashMap(c)         HashTalbe(c)       SortedMap(I)
+											        ->TreeMap(c)
+
+Collection:
+->Collection is the root interface.
+->Collection represent group of individual object in single unit.
+->Collection present in java.util package.
+Collection Methods Name:
+->all(),addAll(),remove(),removeAll(),retainAll(),contains(),containsAll(),isEmpty(),size(),clear(),toArray(),
+  toString(),hashCode(),equals().
+
+Collection vs Collections:
+Collection:- it is an root interface and it is present in java.util package.
+Collections: it is a class which provide several utility methods for collection framework.
+
+List:
+->List is child interface of collection interface.
+->List allow duplicate elements and insertion order is preserved.
+->Null insertion is possible in List.
+
+ArrayList:
+ArrayList Methods:add(index,value),addAll(index,collection),get(index),set(index),remove(index),remove(value),
+                  indexOf(value).
+->ArrayList uses dynamic array data structure to store the data.
+->ArrayList is child class of List interface.
+->ArrayList Duplicates are allowed and insertion order is preserved.
+->ArrayList initial default capacity is 10.
+->ArrayList is not synchronized.
+->ArrayList incresses its size by 50%.
+->it was introduced in 1.2 version.
+->ArrayList implements randomAccess interface so to retrive the data from list is fast.
+
+LinkedList:
+LinkedList methods:add(index,value),addAll(index,collection),get(index),set(index),remove(index),remove(value),
+                  indexOf(value),addFirst().addLast().
+->LinkedList uses double LinkedList data structure to store the data in node and node consist pre->data->next.
+->LinkekdList is child class of List interface.
+->LinkedList duplicates are allowed and insertion order is preserved.
+->Null insertion is possible.
+->best option if our operation is manupulation.
+->LinkedList implements List and Deque interface so we can use method of both interface.
+
+
+Vector:
+Vector Methods:add(index,value),addAll(index,collection),get(index),set(index),remove(index),remove(value),
+                  indexOf(value),capacity().
+->Vector is child class of List interface.
+->duplicates are allowed and insertion order is preserved.
+->vector is synchronized.
+->vector default initial capacity is 10.
+->vector incress its size by 100%.
+->vector was introduced in 1.0 version so it is legecy class.
+->vector uses randomAccess interface so to retrive the data is fast from the list.
+
+Stack:
+Stack methods:push(),pop(),peek(),isEmpty(),search().
+->stack work on the principle of LIFO.
+
+Set:
+->set is child interface of collection interface.
+->in set insertion order is not preserved and duplicates are not allowed.
+->set interface does not contains its own method so we need to use collection interface methods.
+
+HashSet:
+->HashSet is child class of set interface.
+->duplicates are not allowed and insertion order is not preserved.
+->initial capacity of HashSet is 16 and load factor is 0.75%.
+->null insertion is possible.
+->best choise for searching operation.
+->uses hastable data structure and hashing mechanism to store the data.
+
+LinkedHashSet:
+->duplicate are not allowed.
+->insertion order is preserved.(only difference)
+->uses HashTalbe+LinkedList data structure to store the data.
+->initial capacity of HashSet is 16 and load factor is 0.75%.
+->null insertion is possible.
+
+TreeSet:
+->TreeSet implements sortedSet interface.
+->Duplicates are not allowed.
+->insertion order is not preserved.
+->null insertion is not possible.
+->store element in sorting order by default (asce order).
+->uses balanced tree data structure.
+->beter when you want to store data in some sorting order and null insertion is not allowed.
+->hetrogenious data is not allowed in treeset
+
+Queue:
+->Queue works on the principle of FIFO.
+Queue methods:add(),offer(),peek(),element(),remove(),pool()
+	      add()->Adds an element to the queue. If the queue is full, an exception is thrown.
+	      offer()->Adds an element to the queue. If the queue is full, it returns false.
+              element()->Returns the element at the front(Head) of the queue without removing it. 
+                         If the queue is empty, an exception is thrown.
+              peek()->Returns the element at the front(Head) of the queue without removing it. 
+                      If the queue is empty, it returns null.
+	      remove()-> Removes and returns the element at the front(Head) of the queue. 
+                      If the queue is empty, an exception is thrown.
+              pool()-> Removes and returns the element at the front(Head) of the queue. 
+                      If the queue is empty, it returns null.		
+PriorityQueue:
+->duplicates are allowed.
+->insertion order is preserved.
+->hetrogenious data is not allowed.
+
+Map:
+->if you want to represent data in key and value pair then you need to use map interface.
+Map Methods:put(),get(),containsKey(),containsValue(),remove(),isEmpty(),keySet(),values(),entrySet().
+
+HashMap:
+->uses HashTable data structure uses hashcode mechanism.
+->HashMap is not synchronized.
+->HashMap inherit AbstractMap class.
+->Duplicate keys are not allowed but duplicate values are allowed.
+->Insertion order is not preserved.
+->Only one time null key insertion is possible but multiple time null value insertion is possible.
+->default inititial capacity is 16 and load factor is 0.75%.
+
+HashTable:
+->HashTable inherit Dictonory class and uses HashTable data structure (hashcode mechanism).
+->HashTable is Duplicate keys and values are not allowed.
+->HashTable is synchronized.
+->HashTable is legecy class.
+->default initial capacity is 11 and load factor is 0.75%.
+->Insertion order is not preserved.
+
+LinkedHashMap:
+->LinkedHashMap extend HashMap class.
+->LinkedHashMap insertion order is preserved.
+->Default initial capacity is 16 and load factor is 0.75%.
+
+TreeMap:
+->TreeMap implements SortedMap interface.
+->TreeMap store data in asce order.
+->TreeMap does not have null key but have mutiple null values.
+->Default capacity is 16 and load factor is 0.75%
+

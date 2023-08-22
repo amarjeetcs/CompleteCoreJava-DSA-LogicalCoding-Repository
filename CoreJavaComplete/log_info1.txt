@@ -1,0 +1,43 @@
+2023-08-04 13:05:26 INFO com.amarjeet.String.String1   <clinit> main       0 13 com.amarjeet.jdbc.demo::log4j setup is ready
+2023-08-04 13:05:27 DEBUG com.amarjeet.String.String1       main main       7 18 main method executed
+2023-08-04 13:05:43 INFO com.amarjeet.String.String1   <clinit> main       0 13 com.amarjeet.jdbc.demo::log4j setup is ready
+2023-08-04 13:05:43 DEBUG com.amarjeet.String.String1       main main       7 18 main method executed
+2023-08-04 13:09:32 INFO com.amarjeet.String.Logical.Coding.SwapTwoStringWithoutThirdVariable   <clinit> main       1 10 logger setup ready
+2023-08-04 13:11:56 INFO com.amarjeet.String.Logical.Coding.SwapTwoStringWithoutThirdVariable   <clinit> main       0 10 logger setup ready
+2023-08-04 13:11:56 DEBUG com.amarjeet.String.Logical.Coding.SwapTwoStringWithoutThirdVariable       main main       6 30 concating two string
+2023-08-04 13:11:56 DEBUG com.amarjeet.String.Logical.Coding.SwapTwoStringWithoutThirdVariable       main main       7 33 putting initial value of str1 into str2
+2023-08-04 13:11:56 DEBUG com.amarjeet.String.Logical.Coding.SwapTwoStringWithoutThirdVariable       main main       7 36 putting str2 into str1
+2023-08-04 13:12:58 INFO com.amarjeet.String.Logical.Coding.SwapTwoStringWithoutThirdVariable       main main       0 12 logger setup ready
+2023-08-04 13:12:58 DEBUG com.amarjeet.String.Logical.Coding.SwapTwoStringWithoutThirdVariable       main main       7 28 concating two string
+2023-08-04 13:12:58 DEBUG com.amarjeet.String.Logical.Coding.SwapTwoStringWithoutThirdVariable       main main       8 31 putting initial value of str1 into str2
+2023-08-04 13:12:58 DEBUG com.amarjeet.String.Logical.Coding.SwapTwoStringWithoutThirdVariable       main main       9 34 putting str2 into str1
+2023-08-04 13:16:11 DEBUG com.amarjeet.String.Logical.Coding.SwapTwoInteger       main main       0 13 Before swapping
+2023-08-04 13:16:32 DEBUG com.amarjeet.String.Logical.Coding.SwapTwoInteger       main main       0 13 Before swapping
+2023-08-04 13:17:49 INFO com.amarjeet.String.Logical.Coding.SwapTwoInteger       main main       0 13 swapping using third varialbe
+2023-08-04 13:17:49 DEBUG com.amarjeet.String.Logical.Coding.SwapTwoInteger       main main       9 14 Before swapping
+2023-08-04 13:19:37 DEBUG com.amarjeet.String.Logical.Coding.SwapTwoInteger       main main       0 14 Before swapping
+2023-08-04 13:19:37 INFO com.amarjeet.String.Logical.Coding.SwapTwoInteger       main main       8 18 swapping using third varialbe
+2023-08-04 13:19:37 DEBUG com.amarjeet.String.Logical.Coding.SwapTwoInteger       main main       9 22 After swapping
+2023-08-04 13:19:37 INFO com.amarjeet.String.Logical.Coding.SwapTwoInteger       main main       9 26 swapping without third variable
+2023-08-04 14:07:45 DEBUG com.amarjeet.String.Logical.Coding.SwapTwoInteger       main main       0 14 Before swapping
+2023-08-04 14:07:45 INFO com.amarjeet.String.Logical.Coding.SwapTwoInteger       main main       8 18 swapping using third varialbe
+2023-08-04 14:07:45 DEBUG com.amarjeet.String.Logical.Coding.SwapTwoInteger       main main       8 22 After swapping
+2023-08-04 14:07:45 INFO com.amarjeet.String.Logical.Coding.SwapTwoInteger       main main       9 26 swapping without third variable
+2023-08-04 14:08:04 DEBUG com.amarjeet.String.Logical.Coding.SwapTwoInteger       main main       1 14 Before swapping
+2023-08-04 14:08:04 INFO com.amarjeet.String.Logical.Coding.SwapTwoInteger       main main       9 18 swapping using third varialbe
+2023-08-04 14:08:04 DEBUG com.amarjeet.String.Logical.Coding.SwapTwoInteger       main main       10 22 After swapping
+2023-08-04 14:08:04 INFO com.amarjeet.String.Logical.Coding.SwapTwoInteger       main main       11 26 swapping without third variable
+2023-08-04 14:09:18 DEBUG com.amarjeet.String.Logical.Coding.SwapTwoInteger       main main       1 14 Before swapping
+2023-08-04 14:09:18 INFO com.amarjeet.String.Logical.Coding.SwapTwoInteger       main main       11 18 swapping using third varialbe
+2023-08-04 14:09:18 DEBUG com.amarjeet.String.Logical.Coding.SwapTwoInteger       main main       11 22 After swapping
+2023-08-04 14:09:18 INFO com.amarjeet.String.Logical.Coding.SwapTwoInteger       main main       12 26 swapping without third variable
+2023-08-04 14:09:18 DEBUG com.amarjeet.String.Logical.Coding.SwapTwoInteger       main main       13 31 After swapping
+2023-08-04 14:11:52 DEBUG com.amarjeet.String.Logical.Coding.SwapTwoInteger       main main       0 14 Before swapping
+2023-08-04 14:11:52 INFO com.amarjeet.String.Logical.Coding.SwapTwoInteger       main main       8 18 swapping using third varialbe
+2023-08-04 14:11:52 DEBUG com.amarjeet.String.Logical.Coding.SwapTwoInteger       main main       9 22 After swapping
+2023-08-04 14:11:52 INFO com.amarjeet.String.Logical.Coding.SwapTwoInteger       main main       10 26 swapping without third variable
+2023-08-04 14:11:52 DEBUG com.amarjeet.String.Logical.Coding.SwapTwoInteger       main main       10 34 After swapping
+2023-08-04 14:19:46 INFO com.amarjeet.String.Logical.Coding.ReverseString       main main       0 10 logger connected successfully
+2023-08-04 14:31:14 INFO com.amarjeet.String.Logical.Coding.ReverseString       main main       0 10 logger connected successfully
+2023-08-04 14:31:43 INFO com.amarjeet.String.Logical.Coding.ReverseString       main main       0 10 logger connected successfully
+2023-08-04 14:31:43 DEBUG com.amarjeet.String.Logical.Coding.ReverseString       main main       6 18 string reversed succesfully.

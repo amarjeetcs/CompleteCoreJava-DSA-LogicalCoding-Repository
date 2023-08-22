@@ -1,0 +1,9 @@
+Intermediate operations: map(),filter(),distinct(),sorted(),limit(),skip(),toUpperCase,toLowerCase().
+Terminal operations: forEach(),toArray(),reduce(),collect(),min(),max(),count().
+Short circuit operations: findFirst(),findAny(),anyMatch(),allMatch(),noneMatch().
+
+Q.what is Intermidiate operator?
+Ans->Intermediate operator uses to return stream where we can use any number of intermediate operation over stram.
+
+Q.what is Terminal operation>
+Ans->Terminal operation uses to perform on stream and return the final result and we can use only one Terminal oprator on stream.
