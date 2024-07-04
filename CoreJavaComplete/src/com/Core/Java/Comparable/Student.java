@@ -18,7 +18,7 @@ class Student implements Comparable<Student> {
 	// Comparable interface in used to compare the based on single sorting sequence
 	// Comparable interface present in java.lang package
 	// Comparable interface have compareTo() method.
-	// In Comparable you can sort single sorting 
+	// In Comparable you can sort single sorting
 
 	/*
 	 * public int compareTo(Student st) { return this.age-st.age; }
@@ -28,22 +28,54 @@ class Student implements Comparable<Student> {
 	 * public int compareTo(Student st) { return this.rollno-st.rollno; }
 	 */
 
-	public int compareTo(Student st) {
-		return this.name.compareTo(st.name);
+	/*
+	 * public int compareTo(Student st) { return this.name.compareTo(st.name); }
+	 */
+	/*
+	 * public int compareTo(Student s) { return this.rollno-s.rollno; }
+	 */
+
+	/*
+	 * public int compareTo(Student st) { return this.age-st.age; }
+	 */
+
+	/*
+	 * public int compareTo(Student s) { if (age == s.age) return 0; if (age <
+	 * s.age) return -1; if (age > s.age) return 1; return age;
+	 * 
+	 * }
+	 */
+	
+	public int compareTo(Student st)
+	{
+		if(this.age==st.age)
+			return 0;
+		else if(this.age>st.age)
+			return 1;
+		else if(this.age<st.age)
+			return -1;			//here you can take any value insted of 0, 1 and -1 it should be positive and negative and zero
+	
+		return age;
+		
+	}
+	@Override
+	public String toString() {
+		return "Student [rollno=" + rollno + ", name=" + name + ", age=" + age + "]";
 	}
 
 	public static void main(String args[]) {
 		ArrayList<Student> al = new ArrayList<Student>();
-		al.add(new Student(101, "Vijay", 23));
-		al.add(new Student(106, "Ajay", 27));
-		al.add(new Student(105, "Jai", 21));
-
-		Collections.sort(al);
-		for(Student st:al)
-		{
-			System.out.println(st.rollno+" "+st.name+" "+st.age);
-			
-		}
+		al.add(new Student(101, "amarjeet", 23));
+		al.add(new Student(104, "ranjeet", 20));
+		al.add(new Student(103, "vikash", 25));
+		System.out.println("before sorting");
+		System.out.println("-----------------------");
+		System.out.println(al);
 		
+		System.out.println("after sorting");
+		System.out.println("-----------------------");
+		Collections.sort(al);
+		System.out.println(al);
+
 	}
 }

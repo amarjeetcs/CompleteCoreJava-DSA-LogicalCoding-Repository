@@ -54,9 +54,6 @@ public class Emp {
 		Collections.sort(list,new IdComparator());
 		System.out.println(list);
 		
-		ArrayList<Emp> list1=new ArrayList<>(list);
-		Collections.sort(list1,new NameComparator());
-		System.out.println(list1);
 		
 		//Comparator interface used to perform multisorting sequence
 		//it is present in java.util package

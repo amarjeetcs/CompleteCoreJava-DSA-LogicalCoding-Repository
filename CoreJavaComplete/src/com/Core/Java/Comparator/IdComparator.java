@@ -5,7 +5,14 @@ import java.util.Comparator;
 public class IdComparator implements Comparator<Emp>{
 
 	public int compare(Emp o1, Emp o2) {
-		return o1.getId()-o2.getId();
+		if(o1.getId()==o2.getId())
+			return 0;
+		else if(o1.getId()>o2.getId())
+			return 1;
+		else if(o1.getId()<o2.getId())
+			return -1;
+		return 0;
+		
 	}
 	
 

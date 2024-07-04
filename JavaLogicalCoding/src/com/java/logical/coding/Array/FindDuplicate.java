@@ -1,21 +1,42 @@
 package com.java.logical.coding.Array;
 
-import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class FindDuplicate {
-	static Logger logger = Logger.getLogger(FindDuplicate.class);
-
 	public static void main(String[] args) {
-		PropertyConfigurator.configure("src/com/amarjeet/JavaLogicalCoding/PropertiesFile/application.priperties");
-		logger.debug("main method called");
-		int[] arr = { 1, 1, 22, 23, 43, 43, 34, 32 };
+//		int[] arr= {1,1,2,3,4,5,5,9,9,10};
+//		List<Integer> al=new ArrayList<Integer>();
+//	
+//		for(int i=0;i<arr.length;i++)
+//		{
+//			for(int j=i+1;j<arr.length;j++)
+//			{
+//				if(arr[i]==arr[j])
+//				{
+//					System.out.println(arr[j]);
+//				}
+//			}
+//		}
+//		
+
+		int[] arr = { 1, 2, 2, 3, 4, 5, 5, 6, 7 };
+		List<Integer> list = new ArrayList<Integer>();
 		for (int i = 0; i < arr.length; i++) {
 			for (int j = i + 1; j < arr.length; j++) {
 				if (arr[i] == arr[j]) {
-					System.out.println("duplicate element is:" + arr[j]);
+//					list.add(arr[i]);
+					System.out.println(arr[i]);
 				}
 			}
 		}
+		
+		System.out.println(list);
+		int[] arr1 = { 1, 2, 2, 3, 4, 5, 5, 6, 7 };
+		List<Integer> list1 = Arrays.stream(arr1).boxed().toList();
+		Set<Integer> set = new HashSet<Integer>();
+		Set<Integer> s= list1.stream().filter(e -> !set.add(e)).collect(Collectors.toSet());
+		System.out.println(s);
+
 	}
 }

@@ -15,17 +15,18 @@ Top Topics for Interviews & Practical I have done in this CoreJavaComplete with 
 						Collection
 				-----------------------------------------------
 				List	               Set                 Queue	
-			        ->ArrayList(c)         ->HashSet(c)        ->PriorityQueue(c)
+			    ->ArrayList(c)         ->HashSet(c)        ->PriorityQueue(c)
 				->LinkedList(c)        ->LinkedHashSet(c)  ->Dequeue(I)
 				->Vector(c)            ->SortedSet(I)	         ->ArrayDequeue
+										   ->NevigableSet(I)
 				->Stack(c)                 ->TreeSet(c)
 
 						
 
 						                  Map
                                 ---------------------------------------------------------------------- 
-				HashMap(c)     LinkedHashMap(c)         HashTalbe(c)       SortedMap(I)
-											        ->TreeMap(c)
+								HashMap(c)     LinkedHashMap(c)         HashTalbe(c)       SortedMap(I)
+											        										->TreeMap(c)
 
 Collection:
 ->Collection is the root interface.

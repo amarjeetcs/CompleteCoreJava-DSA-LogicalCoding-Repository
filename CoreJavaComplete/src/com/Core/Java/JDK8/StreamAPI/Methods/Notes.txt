@@ -1,4 +1,4 @@
-Intermediate operations: map(),filter(),distinct(),sorted(),limit(),skip(),toUpperCase,toLowerCase().
+Intermediate operations: filter(), map(), flatMap(), distinct(),sorted(),limit(),skip(),toUpperCase,toLowerCase().
 Terminal operations: forEach(),toArray(),reduce(),collect(),min(),max(),count().
 Short circuit operations: findFirst(),findAny(),anyMatch(),allMatch(),noneMatch().
 

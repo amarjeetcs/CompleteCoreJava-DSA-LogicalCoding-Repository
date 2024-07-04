@@ -58,6 +58,8 @@ interface InterfaceDemo {
 	static void static_method() {
 		System.out.println("This is static method...");
 	}
+	
+	
 
 }
 
@@ -65,6 +67,7 @@ class B implements InterfaceDemo {
 	public void m1() {
 		System.out.println("calling m1() of interface...");
 	}
+	
 
 	public void m2() {
 		System.out.println("calling m2() of interface...");

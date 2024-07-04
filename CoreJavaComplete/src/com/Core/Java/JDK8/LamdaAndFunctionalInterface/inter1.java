@@ -1,5 +1,8 @@
 package com.Core.Java.JDK8.LamdaAndFunctionalInterface;
 
+import java.util.concurrent.Callable;
+import java.util.function.Predicate;
+
 public interface inter1 {
 	static int x = 10;
 	final int y = 20;
@@ -38,6 +41,11 @@ class Amarjeet implements inter1{
 		System.out.println(am.y);
 		System.out.println(inter1.x);
 		
+		
+		
 	}
+	
+	
+	
 	
 }

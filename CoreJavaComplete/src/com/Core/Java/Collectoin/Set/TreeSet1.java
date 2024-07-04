@@ -2,7 +2,7 @@ package com.Core.Java.Collectoin.Set;
 import java.util.*;
 public class TreeSet1 {
 	public static void main(String[] args) {
-		TreeSet t=new TreeSet<>();
+		TreeSet<Object> t=new TreeSet<>();
 		t.add(1);
 		t.add(2);
 		t.add(11);
@@ -13,7 +13,8 @@ public class TreeSet1 {
 		t.add(5);
 		t.add(6);
 		t.add(7);
-		//t.add("amarjeet");
+		//t.add(null);
+	//	t.add("amarjeet");
 		
 		System.out.println(t);
 		//hetrogenious data is not allowed 

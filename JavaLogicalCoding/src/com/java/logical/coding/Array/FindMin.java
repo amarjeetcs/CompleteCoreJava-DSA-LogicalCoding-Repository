@@ -1,34 +1,24 @@
 package com.java.logical.coding.Array;
-/*
-class FindMin
-{
-public static void main(String[] args)
-{
-int arr[]={5,4,3,2,1,6,6,7};
-int min=arr[0];
-for(int i=1;i<arr.length;i++)
-{
-if(min>arr[i])
-{
-min=arr[i];
-}
-}
-System.out.println(min);
-}
-}
-*/
 
-class FindMin{
+import java.util.Arrays;
+import java.util.List;
+
+public class FindMin{
 	public static void main(String[] args) {
-		int[] arr= {1,2,3,4,5};
-		int min=arr[0];
-		for(int i=1;i<arr.length;i++)
+		int[] arr={1,2,3,4,5,0};
+		int min=0;
+		for(int i=0;i<arr.length;i++)
 		{
 			if(min>arr[i])
 			{
 				min=arr[i];
 			}
 		}
-		System.out.println("min element is: "+min);
+		System.out.println(min);
+		//using stream api
+		int ls=Arrays.stream(arr).min().getAsInt();
+		System.out.println(ls);
+		
+		
 	}
 }

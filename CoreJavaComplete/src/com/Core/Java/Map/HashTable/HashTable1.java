@@ -15,7 +15,8 @@ public class HashTable1 {
 		//HashTable is legecy class and it is synchronized.
 		//HashTable does not allow any null key and null value 
 		//HashTable uese HashTable data structure and extends Dictoniry class
-		//Hetrogenious data is possible
+		//Hetrogenious data is 
+		//insertion order is  not preserved
 		Hashtable<Integer, String> ht1 = new Hashtable<Integer, String>();
 		ht2.put(1, "sunny");
 		System.out.println(ht2);

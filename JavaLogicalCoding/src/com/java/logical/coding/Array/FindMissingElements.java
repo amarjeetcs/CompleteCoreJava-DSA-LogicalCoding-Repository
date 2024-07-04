@@ -1,43 +1,21 @@
 package com.java.logical.coding.Array;
-/*
-public class FindMissingElement {
-public static void main(String[] args) {
-	int[] arr= {1,2,4,5};
-	int sum1=0;
-	for(int i=0;i<arr.length;i++)
-	{
-		sum1+=arr[i];
-	}
-	System.out.println(sum1);
-	
-	int sum2=0;
-	for(int i=1;i<=5;i++)
-	{
-		sum2+=i;
-	}
-	System.out.println(sum2);
-	System.out.println("missing element is:"+(sum2-sum1));
-}
-}
-*/
-
-class FindMissingElement
-{
+public class FindMissingElements{
 	public static void main(String[] args) {
-		int[] arr= {1,2,4,5};
-		int sum1=0;
+		int[] arr= {1,2,4,5,7,11};
+		int n=arr.length+5;
+		
+		int NaturalSum=n*(n+1)/2;
+		System.out.println(NaturalSum);
+		
+		//sum of the element in array
+		int ArraySum=0;
 		for(int i=0;i<arr.length;i++)
 		{
-			sum1=sum1+arr[i];
+			ArraySum=ArraySum+arr[i];
 		}
-		System.out.println(sum1);
-		int sum2=0;
-		for(int i=0;i<=5;i++)
-		{
-			sum2=sum2+i;
-		}
-		System.out.println(sum2);
+		System.out.println(ArraySum);
 		
-		System.out.println(sum2-sum1);
+		int missingElement=NaturalSum-ArraySum;
+		System.out.println("missingElement= " +missingElement);
 	}
 }
