@@ -6,11 +6,11 @@ public class ObjectInitializationUsingMethod {
 	String city;
 	String state;
 
-	void insertRecord(int id1, String name1, String city1, String state1) {
-		id = id1;
-		name = name1;
-		city = city1;
-		state = state1;
+	void insertRecord(int id, String name, String city, String state) {
+		this.id = id;
+		this.name = name;
+		this.city = city;
+		this.state = state;
 	}
 
 	public static void main(String[] args) {
@@ -18,5 +18,6 @@ public class ObjectInitializationUsingMethod {
 		o.insertRecord(101, "Amarjeet", "Bangalore", "Karnatka");
 		System.out.println(o.id + " " + o.name + " " + o.city + " " + o.state);
 	}
-
+//Initialization Methods: Offer flexibility but require additional method calls, 
+	// which can be error-prone.
 }

@@ -16,4 +16,6 @@ public class FinilizedMethod {
    {   
        System.out.println("finalize method called");   
    }   
+   
+   Optinal
 }  

@@ -7,19 +7,25 @@ public class VectorPractical {
 		v.add(2);
 		v.add("amarjeet");
 		v.add(10.23);
-		v.add('c');
-		v.add(true);
-		v.add(true);
-		v.add(true);
-		v.add(true);
-		v.add(true);
 		
 	
-		System.out.println(v);
-		v.add(6);
-		System.out.println(v);
-		
-		System.out.println(v.capacity());
+		Enumeration<Object> en=v.elements();
+		while(en.hasMoreElements())
+		{
+			System.out.println(en.nextElement());
+		}
+		System.out.println("------------------------------");
+		Iterator<Object> itr=v.iterator();
+		while(itr.hasNext())
+		{
+			System.out.println(itr.next());
+		}
+		System.out.println("-------------------------------");
+		ListIterator<Object> l=v.listIterator();
+		while(l.hasNext())
+		{
+			System.out.println(l.next());
+		}
 		//vector is old class or legecy class
 		//vector incresses its size by 100%
 		//vector methods are synchronized

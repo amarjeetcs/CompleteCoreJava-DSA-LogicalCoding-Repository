@@ -22,17 +22,10 @@ public class Overloading {
 		System.out.println("calling run no parameter...");
 	}
 
-	public void run(int a) {
+	public void run(String str, int b) {
 		System.out.println("calling run with one int parameter...");
 	}
 
-	public static void sleep() {
-		System.out.println("I am sleeping..");
-	}
-
-	public static void sleep(int x) {
-		System.out.println("I am sleeping with overload staic method...");
-	}
 
 	public void run(int a, String b) {
 		System.out.println("callling run with int and string parameter...");
@@ -42,10 +35,7 @@ public class Overloading {
 	public static void main(String[] args) {
 		Overloading m = new Overloading();
 		m.run();
-		m.run(10);
-		m.run(10, "amarjeet");
-		m.sleep();
-		m.sleep(20);
+
 	}
 
 }

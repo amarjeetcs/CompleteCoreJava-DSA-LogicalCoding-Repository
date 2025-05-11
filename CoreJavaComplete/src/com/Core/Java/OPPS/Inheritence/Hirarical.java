@@ -35,6 +35,7 @@ class Amarjeet
 
 
 */
+
 /*
 class Hirarical
 {
@@ -63,40 +64,38 @@ class Hirarical
 
 */
 
-class Hirarical
-{
-	void show(int a,int b)
-	{
+class Hirarical {
+	void show_h(int a, int b) {
 		System.out.println("i am amarjeet...");
 	}
 }
-class B extends Hirarical
-{
-	void show(int a,int b)
-	{
+
+class B extends Hirarical {
+	void show_b(int a, int b) {
 		System.out.println("i am empty...");
 	}
 }
-class C extends B
-{
-	void show(int a,int b)
-	{
+
+class C extends Hirarical {
+	void show_c(int a, int b) {
 		System.out.println("i am hira singh...");
 	}
-}
-class Hira
-{
+
 	public static void main(String[] args) {
-		//Hirarical h=new Hirarical();
-		//h.show(10,20);
-		
-		B b=new B();
-		b.show(10,20);
-		b.show(10,20);
+
+		B b = new B();
+		b.show_b(1,3);
+		b.show_h(1,5);
 		
 		C c=new C();
-		c.show(10,20);
-		//c.show();
+		c.show_c(2,5);
+		c.show_h(3,5);
+		
+		Hirarical h=new Hirarical();
+		h.show_h(3, 5);
+		
+		
+		
+		
 	}
-	
 }

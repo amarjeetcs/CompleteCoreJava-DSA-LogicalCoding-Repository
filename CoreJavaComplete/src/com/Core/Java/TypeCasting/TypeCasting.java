@@ -53,7 +53,9 @@ public class TypeCasting {
     	System.out.println("byte to boolean: " + bool);
     	
     	
-    	
+    	int integer=300;
+    	double dubble=(double) integer;
+    	System.out.println(dubble);
     	
     	
     	

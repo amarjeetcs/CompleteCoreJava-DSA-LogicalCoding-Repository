@@ -1,27 +1,50 @@
 package com.Core.Java.StaticKeyword;
 
 public class StaticMethod {
-	
-	int id=101;
-	String name="Sanjeet";
-	String city="Bangalore";
-	
-	
-	
-	
-	void changeCity() {
-		city="Pune";
-		System.out.println("city name changed using static method: "+city);
+
+	int id;
+	static String name = "Sanjeet";
+	static String city = "Bangalore";
+
+	static void changeValue() {
+		name = "aviraj";
+		city = "pune";
 	}
-	void display() {
-		System.out.println(id+" "+name+" "+city);
+
+	StaticMethod(int id) {
+		this.id = id;
 	}
+
+	void disp() {
+		System.out.println(id + ":" + name + ":" + city);
+	}
+
 	public static void main(String[] args) {
-		StaticMethod s=new StaticMethod();
-		
-		s.display();
-		
-		s.changeCity();
+		StaticMethod s = new StaticMethod(101);
+		s.disp();
+
 	}
+
+//	void changeCity() {
+//		city = "Pune";
+//		System.out.println("city name changed using static method: " + city);
+//	}
+//
+//	void AfterChangedCity() {
+//		System.out.println(id + " " + name + " " + city);
+//	}
+//
+//	void display() {
+//		System.out.println(id + " " + name + " " + city);
+//	}
+//
+//	public static void main(String[] args) {
+//		StaticMethod s = new StaticMethod();
+//
+//		s.display();
+//
+//		s.changeCity();
+//		s.AfterChangedCity();
+//	}
 
 }

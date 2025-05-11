@@ -1,29 +1,90 @@
 package com.Core.Java.ExceptionHandling;
 
+
+import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Collection;;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 public class ArithmaticExceptoin {
 	public static void main(String[] args) {
+		
+		Scanner sc= new Scanner(System.in);
+		int x=sc.nextInt();
+		
 		/*
 		 * int x=100; int y=0; //without try catch will give error arithmatic exception
 		 * int z=x/y; System.out.println(z);
 		 */
-		int x = 100;
-		int y = 0;
 		try {
-			// exception handelled using try catch
+			int x = 100;
+			int y = 0;
+
 			int z = x / y;
 			System.out.println(z);
-		} catch (ArithmeticException e) {
-			System.out.println("You can not divide by Zero");
+		}finally {
+			System.out.println("i will always execute");
 		}
-		System.out.println("rest of the code");
-		System.out.println("rest of the code");
-		System.out.println("rest of the code");
-		System.out.println("rest of the code");
-		System.out.println("rest of the code");
-		System.out.println("rest of the code");
-		System.out.println("rest of the code");
-		System.out.println("rest of the code");
-		System.out.println("rest of the code");
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+//		System.out.println("rest of the code");
+//		System.out.println("rest of the code");
+//		System.out.println("rest of the code");
+//		System.out.println("rest of the code");
+//		System.out.println("rest of the code");
+//		System.out.println("rest of the code");
+//		System.out.println("rest of the code");
+//		System.out.println("rest of the code");
+//		System.out.println("rest of the code");
 
 	}
 }

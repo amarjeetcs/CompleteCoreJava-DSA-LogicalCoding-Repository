@@ -2,12 +2,16 @@ package com.Core.Java.OPPS.Constructor;
 
 public class DefaultConstructor {
 
-	int i;
-	String str;
+	int i; //0
+	String str;//null
+	boolean b;//false
+	
+	
 	public static void main(String[] args) {
 		DefaultConstructor d=new DefaultConstructor();
 		System.out.println(d.i);
 		System.out.println(d.str);
+		System.out.println(d.b);
 	}
 
 }

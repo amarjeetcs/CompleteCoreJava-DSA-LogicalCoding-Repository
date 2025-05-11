@@ -17,7 +17,7 @@ public class MapUses {
 		System.out.println(listMap);
 		
 		List<Integer> obj=Arrays.asList(1,2,3,4,5);
-		List<Integer> listobj=obj.stream().map(e->e*5).collect(Collectors.toList());
+		List<Integer> listobj=obj.stream().map(e->e*2).collect(Collectors.toList());
 		System.out.println(listobj);
 		
 		//data transafortmation 

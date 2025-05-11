@@ -9,6 +9,7 @@ class CreateThreadUsingRunabbleInterface  implements Runnable
 		CreateThreadUsingRunabbleInterface t1=new CreateThreadUsingRunabbleInterface();
 		Thread t=new Thread(t1);
 		t.start();
+		
 	}
 
 }

@@ -8,17 +8,19 @@ public class ObjectInitalizationUsingReferenceVariable {
 
 	public static void main(String[] args) {
 		ObjectInitalizationUsingReferenceVariable o = new ObjectInitalizationUsingReferenceVariable();
-		System.out.println(o);
+		//System.out.println(o);
 		System.out.println(o.id);
 		System.out.println(o.name);
 		System.out.println(o.city);
 		System.out.println(o.state);
 		
-		o.id=171015;
+		System.out.println("+++++++++++++++++++++++++++++++++++");
+		o.id=101;
 		o.name="Amarjeet";
 		o.city="Bangalore";
 		o.state="Karnatka";
 		System.out.println(o.id+" "+o.name+" "+o.city+" "+o.state);
+		
 	}
 
 }

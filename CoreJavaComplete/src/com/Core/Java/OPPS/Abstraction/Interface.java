@@ -47,9 +47,9 @@ class Amarjeet implements Interface
 }*/
 
 interface InterfaceDemo {
-	abstract void m1();
+	void m1();
 
-	public void m2();
+    void m2();
 
 	default void default_method() {
 		System.out.println("Default method");
@@ -72,11 +72,17 @@ class B implements InterfaceDemo {
 	public void m2() {
 		System.out.println("calling m2() of interface...");
 	}
-
+	
 	public static void main(String[] args) {
 		B b = new B();
 		b.m1();
 		b.m2();
+		b.default_method();
 		InterfaceDemo.static_method();
 	}
+//two interface have two method with same signature then how you will implements in class
+
+
+	
+
 }

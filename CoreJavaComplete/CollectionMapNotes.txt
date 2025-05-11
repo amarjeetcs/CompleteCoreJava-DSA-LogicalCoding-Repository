@@ -33,7 +33,7 @@ Collection:
 ->Collection represent group of individual object in single unit.
 ->Collection present in java.util package.
 Collection Methods Name:
-->all(),addAll(),remove(),removeAll(),retainAll(),contains(),containsAll(),isEmpty(),size(),clear(),toArray(),
+->add(),addAll(),remove(),removeAll(),retainAll(),contains(),containsAll(),isEmpty(),size(),clear(),toArray(),
   toString(),hashCode(),equals().
 
 Collection vs Collections:
@@ -139,27 +139,35 @@ HashMap:
 ->uses HashTable data structure uses hashcode mechanism.
 ->HashMap is not synchronized.
 ->HashMap inherit AbstractMap class.
+->Hetrogenios keys and values are possible to insert
 ->Duplicate keys are not allowed but duplicate values are allowed.
 ->Insertion order is not preserved.
 ->Only one time null key insertion is possible but multiple time null value insertion is possible.
 ->default inititial capacity is 16 and load factor is 0.75%.
+->Implements serializable & clonable interface but not randamAccess Interface
+->Better choice for searching operation
+->In hashMap based on .equals() method check contend if content is same then u will insert the keys with same then it will replace with new one
 
 HashTable:
 ->HashTable inherit Dictonory class and uses HashTable data structure (hashcode mechanism).
 ->HashTable is Duplicate keys and values are not allowed.
+->Null keys and null values are not allowed
 ->HashTable is synchronized.
 ->HashTable is legecy class.
 ->default initial capacity is 11 and load factor is 0.75%.
 ->Insertion order is not preserved.
 
 LinkedHashMap:
+->Uses linkedList+HashTable data structure to store data.
 ->LinkedHashMap extend HashMap class.
 ->LinkedHashMap insertion order is preserved.
 ->Default initial capacity is 16 and load factor is 0.75%.
+
 
 TreeMap:
 ->TreeMap implements SortedMap interface.
 ->TreeMap store data in asce order.
 ->TreeMap does not have null key but have mutiple null values.
 ->Default capacity is 16 and load factor is 0.75%
-
+->In TreeMap keys will be be only homogenious but values can we hetrogenious 
+->if you will add null keys or hetrogenious keys u will get nullpointer exception and class caste exception

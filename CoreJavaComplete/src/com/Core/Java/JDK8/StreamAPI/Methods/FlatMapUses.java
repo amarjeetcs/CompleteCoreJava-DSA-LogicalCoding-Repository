@@ -24,11 +24,13 @@ public class FlatMapUses {
 		List<Integer> flm = fm.stream().flatMap(e -> e.stream()).collect(Collectors.toList());
 		System.out.println(flm);
 
-		
-		 List<List<Integer>> finalList=Arrays.asList(list1,list2,list3); List<Integer>
-		 fs=finalList.stream().flatMap(e->e.stream().map(e1->e1+10)).collect(
-		 Collectors.toList()); System.out.println(fs);
-		 
+		List<Integer> ls = fm.stream().flatMap(List::stream).collect(Collectors.toList());
+		System.out.println(ls);
+
+		List<List<Integer>> finalList = Arrays.asList(list1, list2, list3);
+		List<Integer> fs = finalList.stream().flatMap(e -> e.stream().map(e1 -> e1 + 10)).collect(Collectors.toList());
+		System.out.println(fs);
+
 	}
 
 }
